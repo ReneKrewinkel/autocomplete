@@ -9,7 +9,13 @@
 
 
 .ListRow {
-    padding: 10px;
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ListRow div {
+    width: 320px;
+    font-size: 12px;
 }
