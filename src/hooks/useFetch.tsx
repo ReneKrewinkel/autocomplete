@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
+import { People } from '../types';
 
-const useFetch = (url: string) => {
+const useFetch = (url: string): { data: People, isLoaded: boolean, error: DOMException | null } => {
 
   const [data, setData] = useState(null)
   const [isLoaded, setLoaded] = useState(false)

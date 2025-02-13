@@ -1,0 +1,1 @@
+export type { Person, People } from './DataType.d'

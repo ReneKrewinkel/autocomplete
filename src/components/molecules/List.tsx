@@ -1,12 +1,14 @@
+import {People, Person} from "../../types";
+
 interface ListProps {
-  data: any | null
+  data: People
 }
 
 const List = ({ data }: ListProps) => {
   return (
     <div>
       {
-        data.map((item: any, index: number) => {
+        data?.map((item: Person, index: number) => {
           return(
              <div className={"ListRow"} key={index}>
                <div>{item.name}</div>
